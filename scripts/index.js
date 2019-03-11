@@ -78,7 +78,7 @@ function retrieve(data) {
 
                 // Fetches advice API each time user clicks on a given astrology sign
                 function getAdvice() {
-                    fetch('http://api.adviceslip.com/advice')
+                    fetch('http://my-little-cors-proxy.herokuapp.com/http://api.adviceslip.com/advice')
                     .then(response => response.json())
                     .then(data => data.slip.advice)
                     .then(changeAdvice)
